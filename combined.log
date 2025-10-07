@@ -1,0 +1,17 @@
+{"level":"info","message":"Una WELCOME OOO👋","service":"user-service","timestamp":"2025-10-06T04:14:28.818Z"}
+{"level":"info","message":"::1 - - [06/Oct/2025:04:14:28 +0000] \"GET / HTTP/1.1\" 200 19 \"-\" \"HTTPie\"","service":"user-service","timestamp":"2025-10-06T04:14:28.834Z"}
+{"level":"info","message":"::1 - - [06/Oct/2025:04:15:11 +0000] \"GET /api HTTP/1.1\" 200 41 \"-\" \"HTTPie\"","service":"user-service","timestamp":"2025-10-06T04:15:11.882Z"}
+{"level":"info","message":"Una WELCOME OOO👋","service":"user-service","timestamp":"2025-10-06T04:15:39.836Z"}
+{"level":"info","message":"::1 - - [06/Oct/2025:04:15:39 +0000] \"GET / HTTP/1.1\" 200 19 \"-\" \"HTTPie\"","service":"user-service","timestamp":"2025-10-06T04:15:39.838Z"}
+{"level":"info","message":"::1 - - [06/Oct/2025:04:16:17 +0000] \"GET /api HTTP/1.1\" 200 41 \"-\" \"HTTPie\"","service":"user-service","timestamp":"2025-10-06T04:16:17.584Z"}
+{"level":"info","message":"::1 - - [06/Oct/2025:04:17:04 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"user-service","timestamp":"2025-10-06T04:17:04.714Z"}
+{"level":"info","message":"::1 - - [06/Oct/2025:04:18:13 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 31 \"-\" \"HTTPie\"","service":"user-service","timestamp":"2025-10-06T04:18:13.692Z"}
+{"level":"info","message":"::1 - - [06/Oct/2025:07:00:54 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 200 31 \"-\" \"HTTPie\"","service":"user-service","timestamp":"2025-10-06T07:00:54.301Z"}
+{"level":"info","message":"::1 - - [07/Oct/2025:05:38:35 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-GB) WindowsPowerShell/5.1.22621.5909\"","service":"user-service","timestamp":"2025-10-07T05:38:35.295Z"}
+{"level":"info","message":"::1 - - [07/Oct/2025:05:38:38 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"user-service","timestamp":"2025-10-07T05:38:38.555Z"}
+{"level":"info","message":"::1 - - [07/Oct/2025:05:39:51 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"user-service","timestamp":"2025-10-07T05:39:51.994Z"}
+{"level":"error","message":"Signup error Database query failed","service":"user-service","stack":"Error: Database query failed\n    at findUserByEmail (file:///C:/Users/Lancaster/Desktop/DevopsDemo/Acquistions/src/services/user.service.js:11:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///C:/Users/Lancaster/Desktop/DevopsDemo/Acquistions/src/controllers/auth.controller.js:21:26)","timestamp":"2025-10-07T05:40:43.629Z"}
+{"level":"error","message":"Error details: Database query failed","service":"user-service","timestamp":"2025-10-07T05:40:43.636Z"}
+{"level":"info","message":"::1 - - [07/Oct/2025:05:40:43 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 516 \"-\" \"HTTPie\"","service":"user-service","timestamp":"2025-10-07T05:40:43.653Z"}
+{"level":"info","message":"User registered successfully: lankirix@gmail.com","service":"user-service","timestamp":"2025-10-07T05:44:23.174Z"}
+{"level":"info","message":"::1 - - [07/Oct/2025:05:44:23 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 120 \"-\" \"HTTPie\"","service":"user-service","timestamp":"2025-10-07T05:44:23.194Z"}

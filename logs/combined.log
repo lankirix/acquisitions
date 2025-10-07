@@ -1,0 +1,8 @@
+{"level":"info","message":"Una WELCOME OOO👋","service":"user-service","timestamp":"2025-10-05T03:17:32.258Z"}
+{"level":"info","message":"::1 - - [05/Oct/2025:03:17:32 +0000] \"GET / HTTP/1.1\" 200 19 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"user-service","timestamp":"2025-10-05T03:17:32.282Z"}
+{"level":"info","message":"::1 - - [05/Oct/2025:03:17:32 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"user-service","timestamp":"2025-10-05T03:17:32.500Z"}
+{"level":"info","message":"Una WELCOME OOO👋","service":"user-service","timestamp":"2025-10-05T03:17:40.173Z"}
+{"level":"info","message":"::1 - - [05/Oct/2025:03:17:40 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"user-service","timestamp":"2025-10-05T03:17:40.177Z"}
+{"level":"info","message":"Una WELCOME OOO👋","service":"user-service","timestamp":"2025-10-05T03:18:00.429Z"}
+{"level":"info","message":"::1 - - [05/Oct/2025:03:18:00 +0000] \"GET / HTTP/1.1\" 200 19 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"user-service","timestamp":"2025-10-05T03:18:00.433Z"}
+{"level":"info","message":"::1 - - [05/Oct/2025:03:18:03 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"user-service","timestamp":"2025-10-05T03:18:03.508Z"}
