@@ -3,21 +3,25 @@
 ## Setup
 
 1. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
 2. **Create a `.env` file** (copy from `.env.example`):
+
    ```bash
    cp .env.example .env
    ```
 
 3. **Update your `.env` file** with your Neon database URL:
+
    ```
    DATABASE_URL=your_neon_database_connection_string
    ```
 
 4. **Run database migrations:**
+
    ```bash
    npm run db:generate
    npm run db:migrate
@@ -31,11 +35,13 @@
 ## Testing with HTTPie
 
 ### 1. Check if server is running:
+
 ```bash
 http GET http://localhost:3000/health
 ```
 
 ### 2. Test User Signup:
+
 ```bash
 http POST http://localhost:3000/api/auth/sign-up \
   name="John Doe" \
@@ -45,6 +51,7 @@ http POST http://localhost:3000/api/auth/sign-up \
 ```
 
 **Expected Response (201):**
+
 ```json
 {
   "message": "User registered successfully",
@@ -58,6 +65,7 @@ http POST http://localhost:3000/api/auth/sign-up \
 ```
 
 ### 3. Test Duplicate Email (should fail):
+
 ```bash
 http POST http://localhost:3000/api/auth/sign-up \
   name="Jane Doe" \
@@ -67,6 +75,7 @@ http POST http://localhost:3000/api/auth/sign-up \
 ```
 
 **Expected Response (409):**
+
 ```json
 {
   "error": "User with this email already exists"
@@ -74,6 +83,7 @@ http POST http://localhost:3000/api/auth/sign-up \
 ```
 
 ### 4. Test Validation Errors:
+
 ```bash
 http POST http://localhost:3000/api/auth/sign-up \
   name="J" \
@@ -82,6 +92,7 @@ http POST http://localhost:3000/api/auth/sign-up \
 ```
 
 **Expected Response (400):**
+
 ```json
 {
   "error": "Validation failed",
@@ -92,6 +103,7 @@ http POST http://localhost:3000/api/auth/sign-up \
 ## Alternative: Using curl
 
 ### Signup:
+
 ```bash
 curl -X POST http://localhost:3000/api/auth/sign-up \
   -H "Content-Type: application/json" \
@@ -104,6 +116,7 @@ curl -X POST http://localhost:3000/api/auth/sign-up \
 ```
 
 ### Health Check:
+
 ```bash
 curl http://localhost:3000/health
 ```

@@ -3,35 +3,41 @@
 ## Issues Fixed:
 
 ### 1. **Missing File Extensions in Imports**
-   - Fixed `auth.controller.js` imports to include `.js` extensions
-   - Changed `#validations/auth.validation` → `#validations/auth.validation.js`
-   - Changed `#utils/errorFormatter` → `#utils/format.js`
-   - Changed `#services/user.service` → `#services/user.service.js`
-   - Changed `#utils/logger` → `#config/logger.js`
+
+- Fixed `auth.controller.js` imports to include `.js` extensions
+- Changed `#validations/auth.validation` → `#validations/auth.validation.js`
+- Changed `#utils/errorFormatter` → `#utils/format.js`
+- Changed `#services/user.service` → `#services/user.service.js`
+- Changed `#utils/logger` → `#config/logger.js`
 
 ### 2. **Missing User Service File**
-   - Created `src/services/user.service.js` with:
-     - `findUserByEmail()` - Find user by email
-     - `createUser()` - Create new user
-     - `findUserById()` - Find user by ID
+
+- Created `src/services/user.service.js` with:
+  - `findUserByEmail()` - Find user by email
+  - `createUser()` - Create new user
+  - `findUserById()` - Find user by ID
 
 ### 3. **Wrong Database Package Import**
-   - Fixed `src/config/database.js`
-   - Changed `@neondatabase/client` → `@neondatabase/serverless`
+
+- Fixed `src/config/database.js`
+- Changed `@neondatabase/client` → `@neondatabase/serverless`
 
 ### 4. **Email Validation Issue**
-   - Fixed `src/validations/auth.validation.js`
-   - Changed `z.string().max(255)` → `z.string().email().max(255)`
-   - Removed `.toLowerCase()` from password field (passwords should be case-sensitive)
+
+- Fixed `src/validations/auth.validation.js`
+- Changed `z.string().max(255)` → `z.string().email().max(255)`
+- Removed `.toLowerCase()` from password field (passwords should be case-sensitive)
 
 ### 5. **Missing Role Field in Database Schema**
-   - Added `role` field to `src/models/user.model.js`
-   - Type: `varchar(50)`
-   - Default: `'user'`
+
+- Added `role` field to `src/models/user.model.js`
+- Type: `varchar(50)`
+- Default: `'user'`
 
 ### 6. **Created Documentation**
-   - Created `.env.example` with all required environment variables
-   - Created `TESTING.md` with HTTPie testing examples
+
+- Created `.env.example` with all required environment variables
+- Created `TESTING.md` with HTTPie testing examples
 
 ## Server Status: ✅ RUNNING
 
